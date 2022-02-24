@@ -1,5 +1,6 @@
-.all-container{ width: 100%; height: 100%; }
+body{ -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none }
 
+.all-container{ width: 100%; height: 100%; }
 
 #section1{ background-image: url("../img/galaxy1.jpg") }
 #section2{ background-image: url("../img/galaxy2.jpg") }
@@ -24,7 +25,7 @@
 
 
 .sec-button{ background: none; border-radius: 5px; border: 1px solid black; padding: 10px;cursor: pointer; box-shadow: inset 0 0 0 0 skyblue; }
-.sec-button:hover{ color: white; border: 1px solid dodgerblue; box-shadow: inset 200px 0 0 0 dodgerblue;  transition: 1.3s linear;  }
+.sec-button:hover{ color: white; border: 1px solid dodgerblue; box-shadow: inset 256px 0 0 0 dodgerblue;  transition: 1s linear;  }
 
 .section6 .sec-text{ top: 40%; position: absolute }
 
@@ -33,22 +34,59 @@
 /* section1 */
 .sc1{ opacity: 0; background-color: skyblue; height: 100%; border-radius: 50%; }
 .section1.active .sc1{ opacity: 1; transform: translateY(100%); transition: all 1s linear }
+.sec1-first{ position: relative; }
+.sec1-first:after{ content: ''; position: absolute; width: 50px; height: 2px; background-color: black; margin-top: 20px; left: 0; top: 100%; transition: all 1s linear }
+.sec1-first:hover:after{ content: ''; position: absolute; width: 100%; height: 2px; background-color: black; margin-top: 20px; left: 0; top: 100%; transition: all 1s linear }
 
-/* tooltip */
-.tooltip1 { position: absolute; -webkit-backface-visibility: hidden; display: inline-block; top: 50%; left: 31%; border-radius: 20px; background-color: palevioletred; width: 20px; height: 20px }
-.tooltip2 { position: absolute; -webkit-backface-visibility: hidden; display: inline-block; top: 48%; left: 42%; border-radius: 20px; background-color: palevioletred; width: 20px; height: 20px }
-.tooltip3 { position: absolute; -webkit-backface-visibility: hidden; display: inline-block; top: 35%; left: 50%; border-radius: 20px; background-color: palevioletred; width: 20px; height: 20px }
-.tooltip4 { position: absolute; -webkit-backface-visibility: hidden; display: inline-block; top: 10%; left: 70%; border-radius: 20px; background-color: palevioletred; width: 20px; height: 20px }
+/* tooltip *//* section3 */
+.tooltip1 { position: absolute; top: 50%; left: 31%;}
+.tooltip2 { position: absolute; top: 48%; left: 42%;}
+.tooltip3 { position: absolute; top: 35%; left: 50%;}
+.tooltip4 { position: absolute; top: 10%; left: 70%;}
 
-.tooltip1 .tooltip-text { opacity: 0; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
-.tooltip2 .tooltip-text { opacity: 0; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
-.tooltip3 .tooltip-text { opacity: 0; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
-.tooltip4 .tooltip-text { opacity: 0; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
+.tooltip1 .tooltip-text { transition: all .5s linear; opacity: 0; width: 120px; background-color: violet; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
+.tooltip2 .tooltip-text { transition: all .5s linear; opacity: 0; width: 120px; background-color: skyblue; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
+.tooltip3 .tooltip-text { transition: all .5s linear; opacity: 0; width: 120px; background-color: lightgoldenrodyellow; color: black; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
+.tooltip4 .tooltip-text { transition: all .59s linear; opacity: 0; width: 120px; background-color: dimgrey; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
 
-.tooltip1:hover .tooltip-text { opacity: 1; transition: all .5s linear }
-.tooltip2:hover .tooltip-text { opacity: 1; transition: all .5s linear }
-.tooltip3:hover .tooltip-text { opacity: 1; transition: all .5s linear }
-.tooltip4:hover .tooltip-text { opacity: 1; transition: all .5s linear }
+
+.sec-button:hover~.tooltip-wrap .tooltip-text{ opacity: 1; transition: all .5s linear }
+
+/* section4 */
+.sec4-t1{ position: relative }
+.sec4-t1:before{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; left: 5%; top: 100%; opacity: 0  }
+.sec4-t1:after{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; right:95%; top: 100%; opacity: 0 }
+.sec4-t1:hover:before{ opacity: 1; width: 6%; transition: all 1s linear }
+.sec4-t1:hover:after{ opacity: 1; width: 5%; transition: all 1s linear }
+
+.sec4-t2{ position: relative }
+.sec4-t2:before{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; left: 10%; top: 100%; opacity: 0  }
+.sec4-t2:after{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; right:90%; top: 100%; opacity: 0 }
+.sec4-t2:hover:before{ opacity: 1; width: 10%; transition: all 1s linear }
+.sec4-t2:hover:after{ opacity: 1; width: 10%; transition: all 1s linear }
+
+
+/* section5 */
+.sec5-t1{ user-select: none }
+.sec5-t1 span{ padding: 2px; display: inline-block; }
+.sec5-t1 span.active{ animation: smoke 5s linear forwards; transform-origin: bottom; }
+@keyframes smoke {
+    0% {
+        pointer-events: none;
+        opacity: 1;
+        z-index: -1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        filter: blur(20px);
+        transform: translateX(100px) translateY(-300px) rotate(720deg) scale(6);
+    }
+}
+
 
 /* vivid-text */
 .vivid{ display: flex; justify-content: space-between; width: 70%; margin: 0 auto 100px 18%; }
@@ -61,3 +99,4 @@
 .section.active .vivid-text2{ opacity: 1; transition: 2s ease-in-out; color: hotpink; transform: translateY(-50px)}
 .section.active .vivid-text3{ opacity: 1; transition: 3s ease-in-out; color: black; transform: translateY(-50px)}
 .section.active .vivid-text4{ opacity: 1; transition: 4s ease-in-out; color: darkgreen; transform: translateY(-50px)}
+

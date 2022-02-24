@@ -15,6 +15,14 @@ $(function(){
         sectionsColor : ['skyblue', 'pink', 'white', '#F4F4F4', 'black', 'silver'],
         fixedElements: 'footer',
         fadingEffect: true,
+    });
 
+    const text = document.querySelector('.sec5-t1');
+    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+    document.querySelectorAll(".sec5-t1 span").forEach((letter) => {
+        letter.addEventListener("mouseover", () => {
+            letter.classList.add("active");
+        });
     });
 });
