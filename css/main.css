@@ -18,7 +18,7 @@ body{ -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; use
 .section.active .sec1-text{ opacity: 1; transform: translateX(-200px); transition: all 1.5s ease-in-out }
 .section .sec2-text{ opacity: 0; transition: all 1s linear; }
 .section.active .sec2-text{ opacity: 1; transition: all 3s ease-in-out }
-.section .sec3-text{ opacity: 0; transition: all 1s linear; top: 90%; left: 45%; position: absolute }
+.section .sec3-text{ opacity: 0; transition: all 1s linear; top: 90%; left: 40%; position: absolute }
 .section.active .sec3-text{ opacity: 1; transition: all 1.5s ease-in-out; transform: translateY(-780px) }
 .section .sec-button{ opacity: 0; transition: 1.3s ease-in-out }
 .section.active .sec-button{ opacity: 1; transform: translateX(100px); }
@@ -35,8 +35,9 @@ body{ -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; use
 .sc1{ opacity: 0; background-color: skyblue; height: 100%; border-radius: 50%; }
 .section1.active .sc1{ opacity: 1; transform: translateY(100%); transition: all 1s linear }
 .sec1-first{ position: relative; }
-.sec1-first:after{ content: ''; position: absolute; width: 50px; height: 2px; background-color: black; margin-top: 20px; left: 0; top: 100%; transition: all 1s linear }
-.sec1-first:hover:after{ content: ''; position: absolute; width: 100%; height: 2px; background-color: black; margin-top: 20px; left: 0; top: 100%; transition: all 1s linear }
+.sec1-first:after{ content: ''; position: absolute; width: 50px; height: 2px; background-color: black; margin-top: 20px; left: 0; top: 100%; transition: all .5s linear }
+.sec1-first:hover:after{ content: ''; position: absolute; width: 100%; height: 2px; background-color: black; margin-top: 20px; left: 0; top: 100%; transition: all .5s linear }
+
 
 /* tooltip *//* section3 */
 .tooltip1 { position: absolute; top: 50%; left: 31%;}
@@ -54,20 +55,19 @@ body{ -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; use
 
 /* section4 */
 .sec4-t1{ position: relative }
-.sec4-t1:before{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; left: 5%; top: 100%; opacity: 0  }
-.sec4-t1:after{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; right:95%; top: 100%; opacity: 0 }
-.sec4-t1:hover:before{ opacity: 1; width: 6%; transition: all 1s linear }
-.sec4-t1:hover:after{ opacity: 1; width: 5%; transition: all 1s linear }
+.sec4-t1:before{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; left: 5%; top: 100%; opacity: 0; transition: all .5s linear  }
+.sec4-t1:after{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; right:95%; top: 100%; opacity: 0; transition: all .5s linear  }
+.sec4-t1:hover:before{ opacity: 1; width: 6%; transition: all .5s linear }
+.sec4-t1:hover:after{ opacity: 1; width: 5%; transition: all .5s linear }
 
 .sec4-t2{ position: relative }
-.sec4-t2:before{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; left: 10%; top: 100%; opacity: 0  }
-.sec4-t2:after{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; right:90%; top: 100%; opacity: 0 }
-.sec4-t2:hover:before{ opacity: 1; width: 10%; transition: all 1s linear }
-.sec4-t2:hover:after{ opacity: 1; width: 10%; transition: all 1s linear }
-
+.sec4-t2:before{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; left: 10%; top: 100%; opacity: 0; transition: all .5s linear  }
+.sec4-t2:after{ position: absolute; z-index: 1; content: ''; background-color: darkred; width: 0; height: 4px; right:90%; top: 100%; opacity: 0;  transition: all .5s linear }
+.sec4-t2:hover:before{ opacity: 1; width: 10%; transition: all .5s linear }
+.sec4-t2:hover:after{ opacity: 1; width: 10%; transition: all .5s linear }
 
 /* section5 */
-.sec5-t1{ user-select: none }
+.sec5-t1{ user-select: none; }
 .sec5-t1 span{ padding: 2px; display: inline-block; }
 .sec5-t1 span.active{ animation: smoke 5s linear forwards; transform-origin: bottom; }
 @keyframes smoke {
@@ -83,7 +83,7 @@ body{ -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; use
         opacity: 0;
         visibility: hidden;
         filter: blur(20px);
-        transform: translateX(100px) translateY(-300px) rotate(720deg) scale(6);
+        transform: translateX(100px) translateY(-300px) scale(6);
     }
 }
 
@@ -93,10 +93,17 @@ body{ -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; use
 .section .vivid-text1{ opacity: 0; }
 .section .vivid-text2{ opacity: 0; }
 .section .vivid-text3{ opacity: 0; }
-.section .vivid-text4{ opacity: 0; }
+.section .vivid-text4{ opacity: 0; margin-right: 20px;}
 
 .section.active .vivid-text1{ opacity: 1; transition: 1s ease-in-out; color: white; transform: translateY(-50px) }
 .section.active .vivid-text2{ opacity: 1; transition: 2s ease-in-out; color: hotpink; transform: translateY(-50px)}
 .section.active .vivid-text3{ opacity: 1; transition: 3s ease-in-out; color: black; transform: translateY(-50px)}
 .section.active .vivid-text4{ opacity: 1; transition: 4s ease-in-out; color: darkgreen; transform: translateY(-50px)}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span{ background: #616161; }
+
+.footer {background: #fff; height:auto; width: 100%; max-width: 1550px; margin: 0 auto;}
+.topBox{ display: flex; flex-direction: column; align-items: flex-start; font-size: 0.9em }
+
 

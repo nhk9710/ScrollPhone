@@ -82,6 +82,7 @@
 .f-sb-m{ display: flex; justify-content: space-between; align-items: center; }
 .f-sa-m{ display: flex; justify-content: space-around; align-items: center; }
 .f-se-m{ display: flex; justify-content: space-evenly; align-items: center; }
+.f-s-m{ display: flex; justify-content: flex-start; align-items: center; }
 .fcjs{ display: flex; flex-direction: column; justify-content: space-between; }
 .fjf{ display: flex; justify-content: flex-end }
 .fjc{ display: flex; justify-content: center; }

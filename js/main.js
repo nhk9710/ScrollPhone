@@ -1,9 +1,10 @@
 $(function(){
     $('#fullpage').fullpage({
         fingersonly: false,
-        scrollingSpeed: 1000,
+        scrollingSpeed: 900,
         anchors:['firstPage','secondPage','thirdPage','fourthPage', 'fifthPage', 'lastPage'],
         navigation: true,
+        navigationTooltips: ['S22+', '나이토그래피', '단독컬러', 'S22 ULTRA', 'INFINITY-O', 'VIVID'],
         navigationPosition: 'right',
         showActiveTooltip: true,
         slidesNavigation: true,
@@ -11,7 +12,7 @@ $(function(){
         keyboardScrolling: true,
         animateAnchor: true,
         controllArrows: true,
-        menu:'#myNav',
+        menu:'.myNav',
         sectionsColor : ['skyblue', 'pink', 'white', '#F4F4F4', 'black', 'silver'],
         fixedElements: 'footer',
         fadingEffect: true,
