@@ -36,9 +36,13 @@
 .white{ color: white }
 
 /* very big font */
-.vb-font1{ font-size: 1.9em; font-weight: bolder }
-.vb-font2{ font-size: 1.8em; font-weight: bolder }
-.vb-font3{ font-size: 1.7em; font-weight: bolder }
+.vb-font1{ font-size: 2.5em; font-weight: bolder }
+.vb-font2{ font-size: 2.4em; font-weight: bolder }
+.vb-font3{ font-size: 2.3em; font-weight: bolder }
+.vb-font4{ font-size: 2.2em; font-weight: bolder }
+.vb-font5{ font-size: 2.1em; font-weight: bolder }
+.vb-font6{ font-size: 2.0em; font-weight: bolder }
+
 
 /* border dbdbdb */
 .border-db{ border: 1px solid #dbdbdb; padding: 15px; margin-bottom: 10px; }
@@ -90,3 +94,15 @@
 
 /* text align center */
 .t-m{ text-align: center }
+
+/* top */
+.top1{ top:10% }
+.top2{ top:20% }
+.top3{ top:30% }
+.top4{ top:40% }
+.top5{ top:50% }
+.top6{ top:60% }
+.top7{ top:70% }
+.top8{ top:80% }
+.top9{ top:90% }
+

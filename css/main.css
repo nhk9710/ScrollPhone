@@ -10,7 +10,54 @@
 
 
 .section{ position: relative }
-.section .sec1-text{ opacity: 0; transition: all 1.5s linear }
-.section.active .sec1-text{ opacity: 1; transform: translateX(100px); transition: all 1.5s linear }
+.section .sec-text{ opacity: 0; transition: all 1.5s linear }
+.section.active .sec-text{ opacity: 1; transform: translateX(100px); transition: all 1.5s linear }
 
-.section6 .sec1-text{ top: 40%; position: absolute }
+.section .sec1-text{ opacity: 0; transition: all 1.5s linear; float: right }
+.section.active .sec1-text{ opacity: 1; transform: translateX(-200px); transition: all 1.5s ease-in-out }
+.section .sec2-text{ opacity: 0; transition: all 1s linear; }
+.section.active .sec2-text{ opacity: 1; transition: all 3s ease-in-out }
+.section .sec3-text{ opacity: 0; transition: all 1s linear; top: 90%; left: 45%; position: absolute }
+.section.active .sec3-text{ opacity: 1; transition: all 1.5s ease-in-out; transform: translateY(-780px) }
+.section .sec-button{ opacity: 0; transition: 1.3s ease-in-out }
+.section.active .sec-button{ opacity: 1; transform: translateX(100px); }
+
+
+.sec-button{ background: none; border-radius: 5px; border: 1px solid black; padding: 10px;cursor: pointer; box-shadow: inset 0 0 0 0 skyblue; }
+.sec-button:hover{ color: white; border: 1px solid dodgerblue; box-shadow: inset 200px 0 0 0 dodgerblue;  transition: 1.3s linear;  }
+
+.section6 .sec-text{ top: 40%; position: absolute }
+
+.section1.active .sec-text{ transform: translateX(400px); position: absolute; top: 40%; }
+
+/* section1 */
+.sc1{ opacity: 0; background-color: skyblue; height: 100%; border-radius: 50%; }
+.section1.active .sc1{ opacity: 1; transform: translateY(100%); transition: all 1s linear }
+
+/* tooltip */
+.tooltip1 { position: absolute; -webkit-backface-visibility: hidden; display: inline-block; top: 50%; left: 31%; border-radius: 20px; background-color: palevioletred; width: 20px; height: 20px }
+.tooltip2 { position: absolute; -webkit-backface-visibility: hidden; display: inline-block; top: 48%; left: 42%; border-radius: 20px; background-color: palevioletred; width: 20px; height: 20px }
+.tooltip3 { position: absolute; -webkit-backface-visibility: hidden; display: inline-block; top: 35%; left: 50%; border-radius: 20px; background-color: palevioletred; width: 20px; height: 20px }
+.tooltip4 { position: absolute; -webkit-backface-visibility: hidden; display: inline-block; top: 10%; left: 70%; border-radius: 20px; background-color: palevioletred; width: 20px; height: 20px }
+
+.tooltip1 .tooltip-text { opacity: 0; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
+.tooltip2 .tooltip-text { opacity: 0; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
+.tooltip3 .tooltip-text { opacity: 0; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
+.tooltip4 .tooltip-text { opacity: 0; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; }
+
+.tooltip1:hover .tooltip-text { opacity: 1; transition: all .5s linear }
+.tooltip2:hover .tooltip-text { opacity: 1; transition: all .5s linear }
+.tooltip3:hover .tooltip-text { opacity: 1; transition: all .5s linear }
+.tooltip4:hover .tooltip-text { opacity: 1; transition: all .5s linear }
+
+/* vivid-text */
+.vivid{ display: flex; justify-content: space-between; width: 70%; margin: 0 auto 100px 18%; }
+.section .vivid-text1{ opacity: 0; }
+.section .vivid-text2{ opacity: 0; }
+.section .vivid-text3{ opacity: 0; }
+.section .vivid-text4{ opacity: 0; }
+
+.section.active .vivid-text1{ opacity: 1; transition: 1s ease-in-out; color: white; transform: translateY(-50px) }
+.section.active .vivid-text2{ opacity: 1; transition: 2s ease-in-out; color: hotpink; transform: translateY(-50px)}
+.section.active .vivid-text3{ opacity: 1; transition: 3s ease-in-out; color: black; transform: translateY(-50px)}
+.section.active .vivid-text4{ opacity: 1; transition: 4s ease-in-out; color: darkgreen; transform: translateY(-50px)}
