@@ -1,0 +1,16 @@
+.all-container{ width: 100%; height: 100%; }
+
+
+#section1{ background-image: url("../img/galaxy1.jpg") }
+#section2{ background-image: url("../img/galaxy2.jpg") }
+#section3{ background-image: url("../img/galaxy3.jpg"); background-repeat: no-repeat; background-position: center }
+#section4{ background-image: url("../img/galaxy5.jpg"); background-repeat: no-repeat; background-position: center }
+#section5{ background-image: url("../img/galaxy6.jpg"); background-repeat: no-repeat; background-position: center }
+#section6{ background-image: url("../img/galaxy7.jpg") }
+
+
+.section{ position: relative }
+.section .sec1-text{ opacity: 0; transition: all 1.5s linear }
+.section.active .sec1-text{ opacity: 1; transform: translateX(100px); transition: all 1.5s linear }
+
+.section6 .sec1-text{ top: 40%; position: absolute }

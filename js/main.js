@@ -2,7 +2,7 @@ $(function(){
     $('#fullpage').fullpage({
         fingersonly: false,
         scrollingSpeed: 1000,
-        anchors:['firstPage','secondPage','thirdPage','fourthPage', 'fifth', 'sixth'],
+        anchors:['firstPage','secondPage','thirdPage','fourthPage', 'fifthPage', 'lastPage'],
         navigation: true,
         navigationPosition: 'right',
         showActiveTooltip: true,
@@ -12,8 +12,9 @@ $(function(){
         animateAnchor: true,
         controllArrows: true,
         menu:'#myNav',
-        sectionsColor : ['skyblue', 'pink', 'lightgreen', 'orange', 'gold', 'silver'],
+        sectionsColor : ['skyblue', 'pink', 'white', '#F4F4F4', 'black', 'silver'],
         fixedElements: 'footer',
+        fadingEffect: true,
 
     });
 });
